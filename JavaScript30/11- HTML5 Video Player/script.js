@@ -50,8 +50,12 @@ function goFullScreen() {
       video.msRequestFullscreen();
     }
 }
-
-
+function spacePlay(e) {
+  var x = e.keyCode;
+  if (x === 32){
+    togglePlay();
+  }  
+}
 
 // Hook up the event listeners
 video.addEventListener('click', togglePlay);
@@ -77,3 +81,6 @@ progress.addEventListener('mouseup', () => mousedown = false);
 
 
 fullScreen.addEventListener('click', goFullScreen);
+document.addEventListener('keyup', spacePlay);
+
+
