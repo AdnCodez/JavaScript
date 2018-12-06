@@ -56,6 +56,12 @@ function spacePlay(e) {
     togglePlay();
   }  
 }
+function fForFull(e) {
+  var x = e.keyCode;
+  if (x === 70){
+    goFullScreen();
+  }  
+}
 
 // Hook up the event listeners
 video.addEventListener('click', togglePlay);
@@ -64,7 +70,7 @@ video.addEventListener('play', updateButton);
 video.addEventListener('pause', updateButton);
 video.addEventListener('timeupdate', handleProgress);
 
-skipButtons.forEach(button => button.addEventListener('click', skip));
+skipButtons.forEach(button => button.addEventListener('mousedown', skip));
 ranges.forEach(range => range.addEventListener('change', handleRangeUpdate));
 ranges.forEach(range => range.addEventListener('mousemove', handleRangeUpdate));
 
@@ -82,5 +88,8 @@ progress.addEventListener('mouseup', () => mousedown = false);
 
 fullScreen.addEventListener('click', goFullScreen);
 document.addEventListener('keyup', spacePlay);
+document.addEventListener('keyup', fForFull);
+
+
 
 
