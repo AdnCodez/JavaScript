@@ -5,13 +5,13 @@ const testArea = document.querySelector("#test-area");
 const resetButton = document.querySelector("#reset");
 const theTimer = document.querySelector(".timer");
 
-var textExamples = [
-                    'this is a simple paragraph that is meant to be nice and easy to type which is why there will be commas no periods or any capital letters',
-                    'The practice of writing paragraphs is essential to good writing. Paragraphs help to break up large chunks of text and makes the content easier for readers to digest.',
-                    'A language which is also characterized as dynamic, weakly typed, prototype-based and multi-paradigm. Alongside HTML and CSS, JavaScript is one of the three core technologies of the World Wide Web.',
-                    'Python is an interpreted high-level programming language for general-purpose programming. Created by Guido van Rossum and first released in 1991, Python has a design philosophy that emphasizes code readability.',
-                    'The bikers rode down the long and narrow path to reach the city park. When they reached a good spot to rest, they began to look for signs of spring.'
-                    ];
+var textExamples = ['this is a simple paragraph that is meant to be nice and easy to type which is why there will be commas no periods or any      capital letters',
+    'The practice of writing paragraphs is essential to good writing. Paragraphs help to break up large chunks of text and makes the content easier for readers to digest.',
+    'A language which is also characterized as dynamic, weakly typed, prototype-based and multi-paradigm. Alongside HTML and CSS, JavaScript is one of the three core technologies of the World Wide Web.',
+    'Python is an interpreted high-level programming language for general-purpose programming. Created by Guido van Rossum and first released in 1991, Python has a design philosophy that emphasizes code readability.',
+    'The bikers rode down the long and narrow path to reach the city park. When they reached a good spot to rest, they began to look for signs of spring.',
+    'a ability able about above accept according account across act action activity actually add address administration admit adult affect after again against age agency agent ago agree agreement ahead air all allow almost alone along already also although always American among amount analysis and animal another answer any anyone anything appear apply approach area argue arm around arrive art article artist as ask assume at attack attention attorney audience author authority available avoid away baby back bad bag ball bank bar base be beat beautiful because become bed before begin',
+    'degree Democrat democratic describe design despite detail determine develop development die difference different difficult dinner direction director discover discuss discussion disease do doctor dog door down draw dream drive drop drug during each early east easy eat economic economy edge education effect effort eight either election else employee end energy enjoy enough enter entire environment environmental', 'inside instead institution interest interesting international interview into investment involve issue it item its itself job join just keep key kid kill kind kitchen know knowledge land language large last late later laugh law lawyer lay lead leader learn least leave left leg'];
 
 var item = textExamples[Math.floor(Math.random()*textExamples.length)];
 const originText = document.querySelector("#origin-text p").innerHTML = item;
