@@ -6,16 +6,11 @@ const resetButton = document.querySelector("#reset");
 const theTimer = document.querySelector(".timer");
 
 var textExamples = [
-                    'this is a simple paragraph that is meant to be nice and easy to type which is why there will \
-                    be commas no periods or any capital letters',
-                    'The practice of writing paragraphs is essential to good writing. Paragraphs help to break up large chunks of text\
-                    and makes the content easier for readers to digest.',
-                    'A language which is also characterized as dynamic, weakly typed, prototype-based and multi-paradigm.\
-                    Alongside HTML and CSS, JavaScript is one of the three core technologies of the World Wide Web.',
-                    'Python is an interpreted high-level programming language for general-purpose programming. Created by Guido van Rossum\
-                    and first released in 1991, Python has a design philosophy that emphasizes code readability.',
-                    'The bikers rode down the long and narrow path to reach the city park. When they reached a good spot to rest,\
-                    they began to look for signs of spring.'
+                    'this is a simple paragraph that is meant to be nice and easy to type which is why there will be commas no periods or any capital letters',
+                    'The practice of writing paragraphs is essential to good writing. Paragraphs help to break up large chunks of text and makes the content easier for readers to digest.',
+                    'A language which is also characterized as dynamic, weakly typed, prototype-based and multi-paradigm. Alongside HTML and CSS, JavaScript is one of the three core technologies of the World Wide Web.',
+                    'Python is an interpreted high-level programming language for general-purpose programming. Created by Guido van Rossum and first released in 1991, Python has a design philosophy that emphasizes code readability.',
+                    'The bikers rode down the long and narrow path to reach the city park. When they reached a good spot to rest, they began to look for signs of spring.'
                     ];
 
 var item = textExamples[Math.floor(Math.random()*textExamples.length)];
@@ -88,4 +83,3 @@ function reset() {
 testArea.addEventListener("keypress", start, false);
 testArea.addEventListener("keyup", spellCheck, false);
 resetButton.addEventListener("click", reset, false);
-
